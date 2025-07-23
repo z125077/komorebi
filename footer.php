@@ -1,5 +1,5 @@
 <footer>
-    <p>© <?= date('Y') ?> Komorebi</p>
+    <p>&copy; <?= date('Y') ?> Komorebi </p>
 </footer>
 </body>
 </html>

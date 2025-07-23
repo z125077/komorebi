@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<?php session_start(); ?>
 <header>
     <h1>Komorebi</h1>
     <nav>
         <a href="index.php">Home</a>
-        <?php if(empty($_SESSION['username'])): ?>
+        <?php if(empty($_SESSION['user_id'])): ?>
             <a href="signup.php">Sign Up</a>
             <a href="signin.php">Sign In</a>
         <?php else: ?>
@@ -21,4 +21,3 @@
         <?php endif; ?>
     </nav>
 </header>
-<script src="assets/js/petals.js"></script>
